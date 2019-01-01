@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './widgets/modules.dart';
+import './widgets/module.dart';
 import './widgets/bottom_navbar.dart';
 
 void main() => runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Phone Assist'),
           ),
-          body: Modules(),
+          body: Module(),
           bottomNavigationBar: BottomNavbar()),
     );
   }
