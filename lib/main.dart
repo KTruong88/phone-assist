@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './modules.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -10,52 +12,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Phone Assist'),
           ),
-          body: Column(
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  SizedBox(
-                      width: 200.0,
-                      height: 200.0,
-                      child: Card(
-                        child: Text('Module',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 24.0)),
-                      )),
-                  SizedBox(
-                      width: 200.0,
-                      height: 200.0,
-                      child: Card(
-                        child: Text('Module',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 24.0)),
-                      )),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  SizedBox(
-                      width: 200.0,
-                      height: 200.0,
-                      child: Card(
-                        child: Text('Module',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 24.0)),
-                      )),
-                  SizedBox(
-                      width: 200.0,
-                      height: 200.0,
-                      child: Card(
-                        child: Text('Module',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 24.0)),
-                      )),
-                ],
-              ),
-            ],
-          )),
+          body: Modules()),
     );
   }
 }
