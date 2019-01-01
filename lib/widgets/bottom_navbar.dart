@@ -20,10 +20,8 @@ class _BottomNavbar extends State<BottomNavbar> {
     return BottomNavigationBar(
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.business), title: Text('Business')),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.school), title: Text('School')),
+        BottomNavigationBarItem(icon: Icon(Icons.chat), title: Text('Chat')),
+        BottomNavigationBarItem(icon: Icon(Icons.edit), title: Text('Notes')),
       ],
       currentIndex: _selectedIndex,
       fixedColor: Colors.blueAccent,

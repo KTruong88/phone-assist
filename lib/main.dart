@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './modules.dart';
-import './bottom_navbar.dart';
+import './widgets/modules.dart';
+import './widgets/bottom_navbar.dart';
 
 void main() => runApp(MyApp());
 
