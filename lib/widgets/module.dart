@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ModuleFactory extends StatefulWidget {
+class Module extends StatefulWidget {
   final String name;
-  ModuleFactory(this.name);
+  Module(this.name);
 
   @override
-  _ModuleFactory createState() => _ModuleFactory();
+  _Module createState() => _Module();
 }
 
-class _ModuleFactory extends State<ModuleFactory> {
+class _Module extends State<Module> {
   bool _active = true;
 
   void _handleTap() {
