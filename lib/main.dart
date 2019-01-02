@@ -8,9 +8,9 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    //Make these instantiated from a factory instead
-    WidgetFactory apple = new WidgetFactory('module', 'apple');
-    WidgetFactory orange = new WidgetFactory('module', 'orange');
+    WidgetFactory widgetFactory = new WidgetFactory();
+    Widget apple = widgetFactory.createWidget('module', 'apple');
+    Widget orange = widgetFactory.createWidget('module', 'orange');
 
     return MaterialApp(
       home: Scaffold(
