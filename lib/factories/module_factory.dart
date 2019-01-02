@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 
 class ModuleFactory extends StatefulWidget {
   final String name;
-  const ModuleFactory({
-    Key key,
-    this.name
-  }) : super(key: key);
+  ModuleFactory(this.name);
 
   @override
   _ModuleFactory createState() => _ModuleFactory();
@@ -29,7 +26,7 @@ class _ModuleFactory extends State<ModuleFactory> {
             height: 200.0,
             child: Card(
               color: (_active ? Colors.white : Colors.white70),
-              child: Text('widget.name',
+              child: Text(widget.name,
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 24.0)),
             )));

@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Phone Assist'),
           ),
-          body: Center(
-            child: new ModuleFactory(),
+          body: Row(
+            children: <Widget>[new ModuleFactory('Marco Polo'), new ModuleFactory('Module 2')],
           ),
           bottomNavigationBar: BottomNavbar()),
     );
