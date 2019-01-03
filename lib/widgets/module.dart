@@ -26,9 +26,10 @@ class _Module extends State<Module> {
             height: 200.0,
             child: Card(
               color: (_active ? Colors.white : Colors.white70),
-              child: Text(widget.name,
+              child: Center(
+                child: Text(widget.name,
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 24.0)),
-            )));
+            ))));
   }
 }
