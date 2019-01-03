@@ -2,14 +2,11 @@ import 'package:flutter/material.dart';
 
 import './bottom_navbar.dart';
 
-class SettingsMenu extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _SettingsMenu();
-  }
-}
+class SettingsMenu extends StatelessWidget {
+  final name;
 
-class _SettingsMenu extends State<SettingsMenu> {
+  SettingsMenu(this.name);
+
   void _returnHome(BuildContext context) {
     Navigator.of(context).pop(true); //4
   }
@@ -19,7 +16,7 @@ class _SettingsMenu extends State<SettingsMenu> {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Settings'),
+            title: Text('$name settings'),
           ),
           body: IconButton(
             icon: Icon(Icons.settings),

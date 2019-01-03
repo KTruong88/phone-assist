@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './settings_menu.dart';
+
 class Module extends StatefulWidget {
   final String name;
   Module(this.name);
@@ -17,8 +19,13 @@ class _Module extends State<Module> {
     });
   }
 
-  void _openSettings(BuildContext context) {
-    Navigator.of(context).pushNamed('/settings');
+  void _openSettings() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => SettingsMenu(widget.name),
+      )
+    );
   }
 
   @override
@@ -40,7 +47,7 @@ class _Module extends State<Module> {
                     IconButton(
                       icon: Icon(Icons.settings),
                       onPressed: () {
-                        _openSettings(context);
+                        _openSettings();
                       },
                     )
                   ],
