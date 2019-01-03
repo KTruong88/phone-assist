@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
     WidgetFactory widgetFactory = new WidgetFactory();
     Widget apple = widgetFactory.createWidget('module', 'apple');
     Widget orange = widgetFactory.createWidget('module', 'orange');
-    Widget marco_polo = widgetFactory.createWidget('marco_polo_module', 'MarcoPolo!');
     Widget orange2 = widgetFactory.createWidget('module', 'orange2');
     Widget orange3 = widgetFactory.createWidget('module', 'orange3');
     Widget orange4 = widgetFactory.createWidget('module', 'orange4');
@@ -30,7 +29,7 @@ class MyApp extends StatelessWidget {
                 sliver: SliverGrid.count(
                 crossAxisSpacing: 10.0,
                 crossAxisCount: 2,
-                children: <Widget>[apple, orange, marco_polo, orange2, orange3, orange4, orange5, orange6],
+                children: <Widget>[apple, orange, orange2, orange3, orange4, orange5, orange6],
                 ),
                ),
               ],
