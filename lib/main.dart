@@ -12,6 +12,8 @@ class MyApp extends StatelessWidget {
     Widget orange = widgetFactory.createWidget('module', 'orange');
     Widget marco_polo = widgetFactory.createWidget('marco_polo_module', 'MarcoPolo!');
     Widget orange2 = widgetFactory.createWidget('module', 'orange2');
+    Widget orange3 = widgetFactory.createWidget('module', 'orange3');
+    Widget orange4 = widgetFactory.createWidget('module', 'orange4');
 
     return MaterialApp(
       home: Scaffold(
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
           ),
           body: GridView.count(
             crossAxisCount: 2,
-            children: <Widget>[apple, orange, marco_polo, orange2],
+            children: <Widget>[apple, orange, marco_polo, orange2, orange3, orange4],
           ),
           bottomNavigationBar: BottomNavbar()),
     );
