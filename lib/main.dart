@@ -9,11 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        //5
-        '/home': (BuildContext context) => Home(), //6
-        '/settings': (BuildContext context) => SettingsMenu() //7
+        '/': (BuildContext context) => Home(),
+        '/settings': (BuildContext context) => SettingsMenu()
       },
     );
   }

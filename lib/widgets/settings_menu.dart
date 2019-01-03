@@ -19,7 +19,7 @@ class _SettingsMenu extends State<SettingsMenu> {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Phone Assist'),
+            title: Text('Settings'),
           ),
           body: IconButton(
             icon: Icon(Icons.settings),
