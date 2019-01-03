@@ -11,14 +11,15 @@ class MyApp extends StatelessWidget {
     WidgetFactory widgetFactory = new WidgetFactory();
     Widget apple = widgetFactory.createWidget('module', 'apple');
     Widget orange = widgetFactory.createWidget('module', 'orange');
-
+    Widget marco_polo = widgetFactory.createWidget('marco_polo_module', 'MarcoPolo!');
+    Widget orange2 = widgetFactory.createWidget('module', 'orange2');
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
             title: Text('Phone Assist'),
           ),
           body: Row(
-            children: <Widget>[apple, orange],
+            children: <Widget>[marco_polo, apple, orange, orange2],
           ),
           bottomNavigationBar: BottomNavbar()),
     );
