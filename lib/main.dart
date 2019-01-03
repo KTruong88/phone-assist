@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import './factories/widget_factory.dart';
 import './widgets/bottom_navbar.dart';
 
@@ -13,13 +12,15 @@ class MyApp extends StatelessWidget {
     Widget orange = widgetFactory.createWidget('module', 'orange');
     Widget marco_polo = widgetFactory.createWidget('marco_polo_module', 'MarcoPolo!');
     Widget orange2 = widgetFactory.createWidget('module', 'orange2');
+
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
             title: Text('Phone Assist'),
           ),
-          body: Row(
-            children: <Widget>[marco_polo, apple, orange, orange2],
+          body: GridView.count(
+            crossAxisCount: 2,
+            children: <Widget>[apple, orange, marco_polo, orange2],
           ),
           bottomNavigationBar: BottomNavbar()),
     );
