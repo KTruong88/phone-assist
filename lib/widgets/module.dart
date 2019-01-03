@@ -21,11 +21,10 @@ class _Module extends State<Module> {
 
   void _openSettings() {
     Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => SettingsMenu(widget.name),
-      )
-    );
+        context,
+        MaterialPageRoute(
+          builder: (context) => SettingsMenu(widget.name),
+        ));
   }
 
   @override
