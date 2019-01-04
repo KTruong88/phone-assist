@@ -24,6 +24,7 @@ class Home extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               sliver: SliverGrid.count(
                 crossAxisSpacing: 10.0,
+                mainAxisSpacing: 6.0,
                 crossAxisCount: 2,
                 children: <Widget>[
                   apple,
