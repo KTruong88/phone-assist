@@ -7,11 +7,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     WidgetFactory widgetFactory = new WidgetFactory();
-    Widget apple = widgetFactory.createWidget('module', 'apple');
-    Widget orange = widgetFactory.createWidget('module', 'orange');
-    Widget banana = widgetFactory.createWidget('module', 'banana');
-    Widget grapefruit = widgetFactory.createWidget('module', 'grapefruit');
-    Widget blueberry = widgetFactory.createWidget('module', 'blueberry');
+    Widget module = widgetFactory.createWidget('module', 'Module');
+    Widget marcoPolo = widgetFactory.createWidget('MarcoPolo', 'Marco Polo');
+    Widget keepOff = widgetFactory.createWidget('KeepOff', 'Keep Off');
+    Widget fireTest = widgetFactory.createWidget('FireTest', 'Fire Test');
 
     return Scaffold(
         appBar: AppBar(
@@ -27,11 +26,10 @@ class Home extends StatelessWidget {
                 mainAxisSpacing: 6.0,
                 crossAxisCount: 2,
                 children: <Widget>[
-                  apple,
-                  orange,
-                  banana,
-                  grapefruit,
-                  blueberry
+                  module,
+                  marcoPolo,
+                  keepOff,
+                  fireTest
                 ],
               ),
             ),

@@ -1,16 +1,18 @@
+///Flutter Packages
 import 'package:flutter/material.dart';
 
-import './settings_menu.dart';
+///Application Includes
+import '../widgets/settings_menu.dart';
 
-class Module extends StatefulWidget {
-  final String name;
-  Module(this.name);
+class FireTest extends StatefulWidget {
+  final String title;
+  FireTest(this.title);
 
   @override
-  _Module createState() => _Module();
+  _FireTest createState() => _FireTest();
 }
 
-class _Module extends State<Module> {
+class _FireTest extends State<FireTest> {
   bool _active = true;
 
   void _handleTap() {
@@ -23,7 +25,7 @@ class _Module extends State<Module> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => SettingsMenu(widget.name),
+          builder: (context) => SettingsMenu(widget.title),
         ));
   }
 
@@ -39,7 +41,7 @@ class _Module extends State<Module> {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      widget.name,
+                      widget.title,
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 24.0),
                     ),
