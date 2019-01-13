@@ -10,18 +10,18 @@ class BottomNavbar extends StatefulWidget {
 class _BottomNavbar extends State<BottomNavbar> {
   int _selectedIndex = 1;
   final _widgetOptions = [
-    Text('Index 0: Home'),
-    Text('Index 1: Business'),
-    Text('Index 2: School'),
+    Text('placeholder'),
+    Text('placeholder'),
+    Text('placeholder'),
   ];
 
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       items: <BottomNavigationBarItem>[
-        BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-        BottomNavigationBarItem(icon: Icon(Icons.chat), title: Text('Chat')),
-        BottomNavigationBarItem(icon: Icon(Icons.edit), title: Text('Notes')),
+        BottomNavigationBarItem(icon: Icon(Icons.home), title: _widgetOptions[0]),
+        BottomNavigationBarItem(icon: Icon(Icons.chat), title: _widgetOptions[1]),
+        BottomNavigationBarItem(icon: Icon(Icons.edit), title: _widgetOptions[2]),
       ],
       currentIndex: _selectedIndex,
       fixedColor: Colors.blueAccent,
