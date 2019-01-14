@@ -1,4 +1,4 @@
-package com.example.flutterapp;
+package com.phoneassist.flutterapp;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

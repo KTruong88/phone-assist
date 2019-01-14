@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "737571873759",
+    "firebase_url": "https://phone-assist-a6f5f.firebaseio.com",
+    "project_id": "phone-assist-a6f5f",
+    "storage_bucket": "phone-assist-a6f5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737571873759:android:2e71ad45c67fcb8a",
+        "android_client_info": {
+          "package_name": "com.phoneassist.flutterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737571873759-lmrcbu6avud4hbeacn00b5eah599ktnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7f-cfVlw05jae5Ji0M-A_BAny-BUAub8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
