@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 
 ///Application Includes
 import '../widgets/settings_menu.dart';
+import '../modules/module.dart';
 
-class KeepOff extends StatefulWidget {
+class KeepOff extends Module {
   final String title;
-  KeepOff(this.title);
-
-  @override
-  _KeepOff createState() => _KeepOff();
+  KeepOff(this.title): super('');
 }
 
 class _KeepOff extends State<KeepOff> {

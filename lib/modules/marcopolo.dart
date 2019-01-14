@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 
 ///Application Includes
 import '../widgets/settings_menu.dart';
+import '../modules/module.dart';
 
-class MarcoPolo extends StatefulWidget {
+class MarcoPolo extends Module {
   final String title;
-  MarcoPolo(this.title);
-
-  @override
-  _MarcoPolo createState() => _MarcoPolo();
+  MarcoPolo(this.title): super('');
 }
 
 class _MarcoPolo extends State<MarcoPolo> {

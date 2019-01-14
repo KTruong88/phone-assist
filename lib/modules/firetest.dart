@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 
 ///Application Includes
 import '../widgets/settings_menu.dart';
+import '../modules/module.dart';
 
-class FireTest extends StatefulWidget {
+class FireTest extends Module {
   final String title;
-  FireTest(this.title);
-
-  @override
-  _FireTest createState() => _FireTest();
+  FireTest(this.title): super('');
 }
 
 class _FireTest extends State<FireTest> {
