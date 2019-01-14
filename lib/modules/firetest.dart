@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class FireTest extends StatefulWidget {
-  final String title;
-  FireTest(this.title);
+///Application Includes
+import '../modules/module.dart';
 
-  @override
-  _FireTest createState() => _FireTest();
+class FireTest extends Module {
+  final String title;
+  FireTest(this.title): super('');
 }
 
 class _FireTest extends State<FireTest> {
