@@ -17,7 +17,7 @@ class _Module extends State<Module> {
 
   void _handleTap() {
     setState(() {
-      _active = !_active;
+     _active = !_active;
     });
   }
 
@@ -48,7 +48,7 @@ class _Module extends State<Module> {
                     IconButton(
                       icon: Icon(Icons.settings),
                       onPressed: () {
-                        _openSettings();
+                        this._openSettings();
                       },
                     )
                   ],
