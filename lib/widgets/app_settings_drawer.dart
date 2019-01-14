@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:dynamic_theme/dynamic_theme.dart';
 class AppSettingsDrawer extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -8,12 +8,9 @@ class AppSettingsDrawer extends StatefulWidget {
 }
 
 class _AppSettingsDrawer extends State<AppSettingsDrawer> {
-  bool _darkTheme = false;
 
   void _onDarkThemeChanged(bool value) {
-    setState(() {
-      _darkTheme = value;
-    });
+    DynamicTheme.of(context).setBrightness(value ==true ? Brightness.dark : Brightness.light);
   }
 
   @override
@@ -30,7 +27,7 @@ class _AppSettingsDrawer extends State<AppSettingsDrawer> {
           new ListTile(
             title: new Text("Dark Theme"),
             trailing: new Switch(
-                value: _darkTheme,
+                value: (DynamicTheme.of(context).brightness == Brightness.dark) ? true : false,
                 onChanged: (bool value) {
                   _onDarkThemeChanged(value);
                 }),
