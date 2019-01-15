@@ -11,7 +11,8 @@ class ModuleManager extends StatefulWidget {
 }
 
 class _ModuleManagerState extends State<ModuleManager> {
-  List<Module> _modules = [];
+  ///TODO: Revert this back to module list
+  List<Widget> _modules = [];
   @override
   void initState() {
     super.initState();

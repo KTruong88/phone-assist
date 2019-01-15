@@ -29,7 +29,6 @@ class _Module extends State<Module> {
         ));
   }
 
-  @override
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: _handleTap,
@@ -48,7 +47,7 @@ class _Module extends State<Module> {
                     IconButton(
                       icon: Icon(Icons.settings),
                       onPressed: () {
-                        this._openSettings();
+                        _openSettings();
                       },
                     )
                   ],

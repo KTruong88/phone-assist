@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/modules/module.dart';
 
 class Modules extends StatelessWidget {
-  final List<Module> module_list;
+    ///TODO: Revert this back to module list
+  final List<Widget> module_list;
 
   Modules(this.module_list);
 
   @override
   Widget build(BuildContext context) {
+    return this.buildWidget(context);
+  }
+  
+  Widget buildWidget(BuildContext context) {
     return CustomScrollView(
       primary: false,
       slivers: <Widget>[
