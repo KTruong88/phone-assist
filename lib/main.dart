@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './widgets/home.dart';
+import './widgets/Core/home.dart';
 import 'package:dynamic_theme/dynamic_theme.dart';
 
 void main() => runApp(MyApp());
@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
       home: new Home(),
       ),
     );
-  
   }
 
   ThemeData _buildTheme(Brightness brightness) {

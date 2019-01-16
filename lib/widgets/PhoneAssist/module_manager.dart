@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../modules/module.dart';
+import '../../modules/module.dart';
 import './modules.dart';
-import '../factories/widget_factory.dart';
+import '../../factories/widget_factory.dart';
 
 class ModuleManager extends StatefulWidget {
   @override
@@ -12,7 +12,7 @@ class ModuleManager extends StatefulWidget {
 }
 
 class _ModuleManagerState extends State<ModuleManager> {
-  List<Module> _modules = [];
+  List<Widget> _modules = [];
   @override
   void initState() {
     super.initState();
@@ -22,6 +22,7 @@ class _ModuleManagerState extends State<ModuleManager> {
     _modules.add(widgetFactory.createWidget('module', 'banana'));
     _modules.add(widgetFactory.createWidget('module', 'grapefruit'));
     _modules.add(widgetFactory.createWidget('module', 'blueberry'));
+    _modules.add(widgetFactory.createWidget('MarcoPolo', 'MarcoPolo'));
   }
 
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './bottom_navbar.dart';
-import './module_manager.dart';
+import '../PhoneAssist/module_manager.dart';
 import './app_settings_drawer.dart';
 
 class Home extends StatefulWidget {

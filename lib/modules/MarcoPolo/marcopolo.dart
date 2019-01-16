@@ -1,8 +1,9 @@
 ///Flutter Packages
 import 'package:flutter/material.dart';
+import 'package:speech_recognition/speech_recognition.dart';
 
 ///Application Includes
-import '../widgets/settings_menu.dart';
+import "./marcopolo_settings.dart";
 
 class MarcoPolo extends StatefulWidget {
   final String title;
@@ -25,7 +26,7 @@ class _MarcoPolo extends State<MarcoPolo> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => SettingsMenu(widget.title),
+          builder: (context) => MarcoPoloSettings(widget.title),
         ));
   }
 
